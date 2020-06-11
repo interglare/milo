@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .page-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .brand-logo{
+            display: inline-block;
+    height: 100%;
+        }
+        .brand-logo>img{
+            position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="blue-grey lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo"><img src="./public/images/sample.jpg"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Каталог</a></li>
+                <li class="active"><a href="#">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Каталог</a></li>
+        <li class="active"><a href="#">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <div class="container">
+        <div class="section">
+            <h4>Добро пожаловать в интернет-магазин «Meduza Soap»!</h4>
+            <div class="row">
+                <div class="col s12 m8 l6">
+                    <div class="row">
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/3.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/milo_kokosovoe.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/milo_kofeinoe.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/milo_s_romashkoi.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="./public/images/2.jpg">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s12 m8 l6">
+                    <p>
+                        Дорогие друзья, рады приветствовать Вас на страничках нашего сайта.
+                        Мы предлагаем Вашему вниманию натуральное мыло ручной работы для вас и вашей семьи.
+                        В состав нашей продукции входят натуральные ингредиенты, природные добавки, такие как мед,
+                        касторовое и кокосовое масла, кофейные зерна, травы, тщательно подобраны масла для максимального
+                        ухода за Вашей кожей.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer blue-grey lighten-1">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by Polina
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>

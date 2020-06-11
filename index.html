@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+    .card-content{
+        max-height: 60%;
+    }
+    .card{
+        height: 700px;
+    }
+    .card .card-action{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .brand-logo{
+            display: inline-block;
+    height: 100%;
+        }
+        .brand-logo>img{
+            position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="blue-grey lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="./public/images/logo.jpg"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="#">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li class="active"><a href="#">Каталог</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://images.unian.net/photos/2016_09/1473065405-1185.png">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+
+
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="./public/images/milo_kokosovoe.jpg">
+
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Кокосовое мыло</span>
+                            <p>Состав: мыльная основа на кокосовом масле, молоко, касторовое масло, масло авокадо.
+                                Кокосовое мыло благодаря натуральным маслас не вредит коже и не вызывает сухости. Мыло чудесно увлажняет и питает кожу.
+                                </p>
+                        </div>
+                        <div class="card-action">Цена: 500 тг за 70гр</div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="./public/images/milo_kofeinoe.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Кофейное мыло</span>
+                            <p>Состав:молотый кофе, тесный шоколад, масло авокадо, касторовое масло, отдушка с ароматом кофе.
+                                Кофейное мыло придаст коже гладкость и шелковистость, "потянет" её и "взбодрит".
+                                </p>
+                        </div>
+                        <div class="card-action">Цена 500 тг за 70 гр</div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l4">
+                    <div class="card hoverable">
+                        <div class="card-image">
+                            <img src="./public/images/milo_s_romashkoi.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title">Мыло с ромашкой</span>
+                            <p>Состав: касторовое масло, масло авокадо, масло ши, ромашка.
+                                Обладающее полезными свойствами ромашки, насыщенное ухаживающими маслами, имеющее нежную кремовую пенку и очень лёгкие и деликатные скрабящие частички — такое мыло подойдёт даже требовательным людям с чрезывычайно чувствительной кожей.
+                                </p>
+                        </div>
+                        <div class="card-action">Цена: 500 тг за 70 гр</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="page-footer blue-grey lighten-1">
+        <div class="footer-copyright">
+            <div class="container">
+                Made by Polina
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('.parallax').parallax();
+        });
+    </script>
+</body>
+
+</html>
